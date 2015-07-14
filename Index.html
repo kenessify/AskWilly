@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AskWilly?</title>
+        <LINK rel="stylesheet" type="text/css" href="Style.css"/>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="VideoFrame.JPG" class="fullscreen-bg__video">
+                <source src="bg3.webm" type="video/webm">
+            </video>
+        </div>
+        <center><div id="askwilly">
+            <h1 style="text-align: center;">                Welcome to AskWilly            </h1>
+            <p style="text-align: center">                Find all the answers to your questions            </p>
+            <br/>
+
+
+
+            <form action="Search.php" method="get">
+                <h2 style="text-align: center">What would you like to know?</h2>
+                <center>
+                    <textarea name="Question" cols="50" rows="5" placeholder="How to write a HangMan Game using PHP Script... "></textarea><br/>
+                    Category: <select name="Category" style="width: 130px;
+                                                             background: rgba(255,255,255,0.23);
+                                                             border: 1px solid #000080;
+                                                             -moz-border-radius: 5px;
+                                                             -webkit-border-radius: 5px;
+                                                             border-radius: 5px;
+                                                             padding: 5px 5px 5px 5px;
+                                                             color: darkgrey";>
+                        <option>Biology</option>
+                        <option>Calculus</option>
+                        <option>Chemistry</option>
+                        <option>Physics</option>
+                        <option>Programming</option>
+                        <option>Satistics</option>
+                    </select>
+                    <button type="submit" name="ask">AskWilly?</button>
+                    <br/>
+                    <h5 style="text-align: center">Not registered yet? <a href="SignUp.php">Sign Up</a> now and get more from askWilly</h5>
+                </center>
+
+            </form>
+        </div></center>
+
+    </body>
+</html>
